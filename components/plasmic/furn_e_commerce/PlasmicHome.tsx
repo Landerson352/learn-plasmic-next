@@ -40,7 +40,6 @@ import ProductCard from "../../ProductCard"; // plasmic-import: XuMN_M3Xg6uolp/c
 import Ratings from "../../Ratings"; // plasmic-import: AYdZ6jQDwYWu6U/component
 import FeatureItem from "../../FeatureItem"; // plasmic-import: p09lbHgG8Ulsh/component
 import BlogPost from "../../BlogPost"; // plasmic-import: gtJb5pCoempr4F/component
-import Footer from "../../Footer"; // plasmic-import: UD_H8su_m919k/component
 
 import { useScreenVariants as useScreenVariants_9LdGg6IuIx6DD } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 9LdGg6iuIX6dD-/globalVariant
 
@@ -66,7 +65,6 @@ export type PlasmicHome__OverridesType = {
   productCarousel?: p.Flex<typeof ProductCarousel>;
   productGrid?: p.Flex<"div">;
   featureItem?: p.Flex<typeof FeatureItem>;
-  footer?: p.Flex<typeof Footer>;
 };
 
 export interface DefaultHomeProps {}
@@ -809,12 +807,6 @@ function PlasmicHome__RenderFunc(props: {
                 }}
               />
             </p.Stack>
-
-            <Footer
-              data-plasmic-name={"footer"}
-              data-plasmic-override={overrides.footer}
-              className={classNames("__wab_instance", sty.footer)}
-            />
           </div>
         </div>
       </div>
@@ -823,19 +815,11 @@ function PlasmicHome__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "header",
-    "productCarousel",
-    "productGrid",
-    "featureItem",
-    "footer"
-  ],
+  root: ["root", "header", "productCarousel", "productGrid", "featureItem"],
   header: ["header"],
   productCarousel: ["productCarousel"],
   productGrid: ["productGrid"],
-  featureItem: ["featureItem"],
-  footer: ["footer"]
+  featureItem: ["featureItem"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -846,7 +830,6 @@ type NodeDefaultElementType = {
   productCarousel: typeof ProductCarousel;
   productGrid: "div";
   featureItem: typeof FeatureItem;
-  footer: typeof Footer;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -910,7 +893,6 @@ export const PlasmicHome = Object.assign(
     productCarousel: makeNodeComponent("productCarousel"),
     productGrid: makeNodeComponent("productGrid"),
     featureItem: makeNodeComponent("featureItem"),
-    footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHome
     internalVariantProps: PlasmicHome__VariantProps,
