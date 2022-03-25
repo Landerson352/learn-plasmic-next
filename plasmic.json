@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -32,7 +32,8 @@
       "images": [],
       "indirect": true,
       "globalContextsFilePath": "",
-      "codeComponents": []
+      "codeComponents": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "izpLuD9XfjEg4waoVkj7iA",
@@ -185,32 +186,6 @@
           "componentType": "component"
         },
         {
-          "id": "u1-YSj3fOTG",
-          "name": "About",
-          "type": "managed",
-          "projectId": "izpLuD9XfjEg4waoVkj7iA",
-          "renderModuleFilePath": "plasmic/furn_e_commerce/PlasmicAbout.tsx",
-          "importSpec": {
-            "modulePath": "../pages/about.tsx"
-          },
-          "cssFilePath": "plasmic/furn_e_commerce/PlasmicAbout.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "9vXHJgadaI",
-          "name": "SampleArena",
-          "type": "managed",
-          "projectId": "izpLuD9XfjEg4waoVkj7iA",
-          "renderModuleFilePath": "plasmic/furn_e_commerce/PlasmicSampleArena.tsx",
-          "importSpec": {
-            "modulePath": "../pages/sample-arena.tsx"
-          },
-          "cssFilePath": "plasmic/furn_e_commerce/PlasmicSampleArena.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "ODIlYYxcIH2",
           "name": "Button",
           "type": "managed",
@@ -223,6 +198,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "vBSG9Cbg6O",
+          "name": "Blank",
+          "type": "managed",
+          "projectId": "izpLuD9XfjEg4waoVkj7iA",
+          "renderModuleFilePath": "plasmic/furn_e_commerce/PlasmicBlank.tsx",
+          "importSpec": {
+            "modulePath": "../pages/blank.tsx"
+          },
+          "cssFilePath": "plasmic/furn_e_commerce/PlasmicBlank.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
