@@ -38,7 +38,7 @@ function Header_(props: HeaderProps, ref: HTMLElementRefOf<"div">) {
   // By default, we are just piping all HeaderProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicHeader root={{ ref }} {...props} />;
+  return <PlasmicHeader root={{ ref }} {...props} overrides={{ img: { src: 'https://www.placecage.com/gif/200/100' } }} />;
 }
 
 const Header = React.forwardRef(Header_);
